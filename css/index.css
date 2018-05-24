@@ -2,15 +2,111 @@ body {
     font-family: 'Sunflower', sans-serif;
 }
 
+.nav-bar {
+    top: 0;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-button {
+    float: right;
+    box-sizing: border-box;
+    width: 85px;
+    height: 100%;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-text {
+    text-decoration: none;
+}
+
+.nav-text:visited {
+    color: #fff;
+}
+
+.nav-text:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.nav-text:hover:after {
+    width: 100%;
+    background: #fff;
+}
+
+.fp-viewing-home-0 #nav-home:after {
+    width: 100%;
+    background: #fff;
+}
+
+.fp-viewing-about-0 #nav-about:after {
+    width: 100%;
+    background: #fff;
+}
+
+.fp-viewing-contact-0 #nav-contact:after {
+    width: 100%;
+    background: #fff;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.content-flex {
+    display: flex;
+    flex-direction: column;
+}
+
 .title-sec {
     text-align: center;
     font-size: 4em;
-    background-color: rgb(6, 58, 113);
+    background-image: url("../img/title-unsplash.jpg");
+    background-size: cover;
     color: #fff;
     /* offset-x | offset-y | blur-radius | color */
     text-shadow: 0 0 10px #222; 
 }
 
+.title-velum {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 .about-sec {
-    padding: 0 30px;
+    padding: 0 60px;
+    background-color: rgb(47, 106, 168);
+    color: #fff;
+}
+
+.about-text {
+    font-size: 3em;
+    text-align: center;
+}
+
+.contact-sec {
+    background-color: rgb(0, 22, 44);
+    color: #fff;
+}
+
+.contact-banner {
+    flex: 1;
+    text-align: center;
+    font-size: 2em;
+}
+
+.contact-text {
+    flex: 2;
+    text-align: center;
 }
