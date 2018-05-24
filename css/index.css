@@ -23,6 +23,7 @@ body {
 
 .nav-text {
     text-decoration: none;
+    color: #fff;
 }
 
 .nav-text:visited {
