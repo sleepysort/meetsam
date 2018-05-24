@@ -1,0 +1,16 @@
+body {
+    font-family: 'Sunflower', sans-serif;
+}
+
+.title-sec {
+    text-align: center;
+    font-size: 4em;
+    background-color: rgb(6, 58, 113);
+    color: #fff;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 0 0 10px #222; 
+}
+
+.about-sec {
+    padding: 0 30px;
+}
