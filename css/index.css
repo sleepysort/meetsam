@@ -1,113 +1,68 @@
 body {
-    font-family: 'Sunflower', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.nav-bar {
-    top: 0;
-    position: fixed;
-    height: 60px;
+.logo-text {
+    font-family: 'Poiret One', cursive;
+    font-size: 48pt;
+    color: #0070c0;
+}
+
+.tagline-text {
+    font-size: 18pt;
+}
+
+.section {
     width: 100%;
-    z-index: 1;
-}
-
-.nav-button {
-    float: right;
-    box-sizing: border-box;
-    width: 85px;
-    height: 100%;
-    color: #fff;
-    font-size: 1.2em;
-    padding: 10px;
-    text-align: center;
-}
-
-.nav-text {
-    text-decoration: none;
-    color: #fff;
-}
-
-.nav-text:visited {
-    color: #fff;
-}
-
-.nav-text:after {
-    content: '';
-    display: block;
-    margin: auto;
-    height: 1px;
-    width: 0px;
-    background: transparent;
-    transition: width .5s ease, background-color .5s ease;
-}
-
-.nav-text:hover:after {
-    width: 100%;
-    background: #fff;
-}
-
-.fp-viewing-home-0 #nav-home:after {
-    width: 100%;
-    background: #fff;
-}
-
-.fp-viewing-about-0 #nav-about:after {
-    width: 100%;
-    background: #fff;
-}
-
-.fp-viewing-contact-0 #nav-contact:after {
-    width: 100%;
-    background: #fff;
-}
-
-.attribution {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-}
-
-.content-flex {
     display: flex;
     flex-direction: column;
+    padding: 16px 0;
 }
 
-.title-sec {
-    text-align: center;
-    font-size: 4em;
-    background-image: url("../img/title-unsplash.jpg");
-    background-size: cover;
-    color: #fff;
-    /* offset-x | offset-y | blur-radius | color */
-    text-shadow: 0 0 10px #222; 
+.section-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4px 0;
 }
 
-.title-velum {
-    background-color: rgba(0, 0, 0, 0.3);
+.logo-img {
+    height: 250px;
 }
 
-.about-sec {
-    padding: 0 60px;
-    background-color: rgb(47, 106, 168);
-    color: #fff;
+.form-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.about-text {
-    font-size: 3em;
-    text-align: center;
+.form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.contact-sec {
-    background-color: rgb(0, 22, 44);
-    color: #fff;
+.waitlist-field {
+    border: none;
+    border-bottom: solid #333 1px;
+    color: #333;
+    font-size: 14pt;
+    padding: 4px 0;
+    margin: 4px 0;
+    outline: none;
 }
 
-.contact-banner {
-    flex: 1;
-    text-align: center;
-    font-size: 2em;
+.waitlist-submit {
+    width: 100%;
 }
 
-.contact-text {
-    flex: 2;
-    text-align: center;
+.footer-text {
+    font-size: 11pt;
+}
+
+@media screen and (max-width: 600px) {
+
 }
